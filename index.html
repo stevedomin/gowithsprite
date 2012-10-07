@@ -1,1 +1,64 @@
-src/gowithsprite.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="gowithsprite.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="#">GoWithSprite</a>
+
+                <button id="uploadSpritesButton" class="btn" type="button">Upload sprites</button>
+                <input id="uploadSpritesInput" type="file" class="files" multiple>
+                <button id="downloadSpriteAndCSSButton" class="btn" type="button">Download Sprite & CSS</button>
+                <button id="openSpriteAndCSSButton" class="btn" type="button">Open Sprite & CSS</button>
+                <button id="clearCanvasButton" class="btn" type="button">Clear canvas</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainContainer" class="container-fluid">
+        <div id="dropzone" class="center">
+            <h2 id="helpText">Drop image files here from your desktop</h2>
+        </div>
+    </div>
+    
+    <script type="text/html" id="sprite_template">
+        <div id="<%= id %>" class="sprite">
+            <img src="<%= src %>" alt="<%= name %>" title="<%= name %>" />
+        </div>
+    </script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://raw.github.com/eligrey/FileSaver.js/master/FileSaver.min.js"></script>
+    <!-- util -->
+    <script type="text/javascript" src="src/lib/dom_ext.js"></script>
+    <script type="text/javascript" src="src/lib/simple_templating.js"></script>
+    <!-- gws : GoWithSprite -->
+    <script type="text/javascript" src="src/lib/gws/util.js"></script>
+    <script type="text/javascript" src="src/lib/gws/sprite_element.js"></script>
+    <script type="text/javascript" src="src/lib/gws/sprite_canvas.js"></script>
+    <script type="text/javascript" src="src/lib/gws/sprite_stylesheet.js"></script>
+    <script type="text/javascript" src="src/gowithsprite.js"></script>
+</body>
+</html>
