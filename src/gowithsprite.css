@@ -1,0 +1,68 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.brand {
+    font-family: 'Bubblegum Sans';
+}
+
+.navbar button {
+    font-family: 'Bubblegum Sans';
+}
+
+input.files {
+    display: block;
+    width: 103px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.center {
+    display : -webkit-box;
+    display : -moz-box;
+    display : box;
+    -webkit-box-orient : vertical;
+    -webkit-box-pack : center;
+    -webkit-box-align : center;
+    -moz-box-orient : vertical;
+    -moz-box-pack : center;
+    -moz-box-align : center;
+    box-orient: vertical;
+    box-pack: center;
+    box-align: center;
+}
+
+#mainContainer {
+    height: 100%;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 0px 20px;
+}
+
+#dropzone {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px dotted #CCC;
+    padding: 2px;
+}
+
+#dropzone h2 {
+    font-family: 'Bubblegum Sans';
+    text-align: center;
+}
+
+.dropzone-over {
+    -webkit-box-shadow: inset 0px 0px 50px #777;
+    -moz-box-shadow: inset 0px 0px 50px #777;
+    box-shadow: inset 0px 0px 50px #777;
+}
+
+.sprite {
+    display: inline-block;
+}
