@@ -22,7 +22,7 @@ To view it, open `docs` folder in your browser.
 
 ## Tests
 
-Tests are written using [mocha](http://visionmedia.github.com/mocha/).
+Tests are written using [mocha](http://mochajs.org/).
 
 To run tests, open the test runner HTML file in your browser. It's located in : `spec/runner.html`
 
